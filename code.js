@@ -5,3 +5,6 @@ function logar(){
 
 
 
+function imprimir(){
+    alert("Olá Javascript")
+}
