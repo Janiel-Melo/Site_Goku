@@ -9,14 +9,31 @@
 </head>
 
 <body>
-    <div class="goku"></div>
-    <div class="box">Box Login</div>
-    <div class="container"></div>
-         <div class="nav">
-            <input type="text" id="Login" placeholder="Login">
-            <input type="password" id="password" placeholder="senha">
-            <button type="button" onclick="imprimir()">Login</button>
-         
-         </div>    
+      <nav>
+    <a class="nav-link active" aria-current="page" href="#">Home</a>
+    <a href="sobre.html">Sobre</a>
+    <a href="#">Produtos</a>
+    <a href="#">Ofertas</a>
+    <a href="#">Entre ou Cadastre-se</a>
+  </nav>
+
+<div class="login-box">
+    <h2>Login</h2>
+    <form>
+        <input type="text" id="Login" placeholder="E-mail"> 
+        <input type="password" id="password" placeholder="Senha">
+        <button type="button" onclick="imprimir()">Login</button>
+    </form>
+</div><br><br><br>
+
+<div class="registro-box">
+    <h2>Registro</h2>
+    <form>
+        <input type="text" id="Registro" placeholder="E-mail"> 
+        <input type="password" id="pass" placeholder="Senha">
+        <input type="password" id="pass" placeholder="Repita a senha">
+        <button type="button" onclick="imprimir()">Registre-se</button>
+    </form>
+</div>
 </body>
 </html>
