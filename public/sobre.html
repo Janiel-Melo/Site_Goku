@@ -5,42 +5,107 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sobre nós</title>
 </head>
-
-<style>
-    body {
-        background-image: url(img/shenlong.gif);
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 100vh;
-        margin: 0;
-    }
-
-    .caixa-texto {
-        background-color: rgba(255, 255, 255, 0.6);
-        padding-top: 200px;
-    }
-
-    h1 {
-        padding-left: 200px;
-        padding-right: 200px;
-        padding-top: 200px;
-        color: white;
-        font-family: 'Times New Roman', Times, serif;
-        -webkit-text-stroke: 1px orangered;
-        text-align: center;
-    }
-
-
-
-</style>
 <body>
-    <div class="caixa-texto">
-    <h1>Olá! Então você quer saber mais sobre nós?<br>
-        Algum ser juntou as 7 esferas do dragão e pediu ao Shenlong
-        uma equipe que criasse a melhor loja virtual com bonecos de
-        Dragon Ball!
-    </h1>
+     <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #fff;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    nav {
+      background-color: rgba(0, 0, 0, 0.85);
+      padding: 15px 30px;
+      text-align: center;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 100;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+    }
+
+    nav a {
+      color: white;
+      margin: 0 20px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: orangered;
+    }
+
+    .background {
+      background: url("img/shenlong.gif") no-repeat center center/cover;
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      position: relative;
+      padding-bottom: 180px; 
+    }
+
+    .texto {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.75);
+      padding: 40px 80px;
+      box-sizing: border-box;
+      text-align: center;
+      border-top: 3px solid orangered;
+    }
+
+    .texto h1 {
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      font-size: 36px;
+      margin-bottom: 20px;
+      -webkit-text-stroke: 1px orangered;
+    }
+
+    .texto p {
+      font-size: 20px;
+      line-height: 1.6;
+      text-align: justify;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="#">Produtos</a>
+    <a href="#">Ofertas</a>
+    <a href="#">Entre ou Cadastre-se</a>
+  </nav>
+
+  <div class="background">
+    <div class="texto">
+      <h1>Então você quer saber mais sobre nós?</h1>
+      <p>
+        Dizem que, quando alguém reúne as sete Esferas do Dragão, pode realizar qualquer desejo. Parece que alguém
+        teve a brilhante ideia de pedir ao Shenlong a criação da melhor loja de produtos de Dragon Ball!<br><br>
+
+        Assim nasceu nossa loja: um espaço feito especialmente para fãs que cresceram acompanhando
+        as batalhas e a evolução de Goku. Aqui você encontra itens que carregam o espírito dos guerreiros Z
+        e toda a nostalgia de uma das maiores sagas de todos os tempos.<br><br>
+
+        Nosso objetivo é trazer para você produtos que vão fazer parte da sua coleção, do seu dia a dia e,
+        acima de tudo, manter vivo o universo de Dragon Ball em cada detalhe.
+      </p>
     </div>
-    
+  </div>
+
 </body>
 </html>
