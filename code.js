@@ -118,12 +118,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const usuarioLogado = localStorage.getItem('usuarioLogado');
     const justLoggedIn = localStorage.getItem('justLoggedIn');
 
-   // if (!usuarioLogado) {
-        //alert('⚠️ Você precisa estar logado para acessar a loja!\n\nPor favor, faça login ou crie uma conta.');
-        //window.location.href = 'Cadastro.html';
-       // return;
-   // }
-
     if (justLoggedIn === 'true') {
         showWelcomePopup(usuarioLogado);
         localStorage.removeItem('justLoggedIn');
