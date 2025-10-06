@@ -71,38 +71,42 @@ function verificarlogin() {
         alert(`Bem-vindo de volta, ${usuarioLogado}!`);
     }       
 }
-function verificarStatusLogin() {
-    const usuarioLogado = localStorage.getItem('usuarioLogado');
-    
-    // Elementos da Navbar
-    const linkLogin = document.getElementById('link-login');
-    const linkLogout = document.getElementById('link-logout');
-    const saudacao = document.getElementById('saudacao-usuario');
+function show(el, disp='block'){ if(el){ el.hidden=false; el.style.display=disp; } }
+function hide(el){ if(el){ el.hidden=true; el.style.display=''; } }
+function initialsFrom(s){ s=(s||'').trim(); return s ? (s.includes(' ')? s.split(' ').slice(0,2).map(w=>w[0]).join(''): s[0]).toUpperCase() : 'U'; }
 
-    if (usuarioLogado) {
-        // Se logado: ESCONDE o link "Entre/Cadastre-se"
-        if (linkLogin) linkLogin.style.display = 'none';
+function verificarStatusLogin(){
+  const raw = localStorage.getItem('usuarioLogado');
 
-        // MOSTRA o link "Sair (Logout)"
-        if (linkLogout) linkLogout.style.display = 'block';
-        
-        // MOSTRA a saudação (opcional)
-        if (saudacao) {
-            saudacao.textContent = `Olá, ${usuarioLogado}!`;
-            saudacao.style.display = 'block';
-        }
-        
-    } else {
-        // Se não logado: Garante que os links de login apareçam
-        if (linkLogin) linkLogin.style.display = 'block';
-        if (linkLogout) linkLogout.style.display = 'none';
-        if (saudacao) saudacao.style.display = 'none';
+  const linkLogin  = document.getElementById('link-login');   // seu link "Entre..."
+  const linkLogout = document.getElementById('link-logout');
+  const userBox    = document.getElementById('user-box');
+  const userLink   = document.getElementById('user-link');
+  const userIcon   = document.getElementById('user-icon');
+  const avatar     = document.getElementById('avatar-usuario');
+  const saudacao   = document.getElementById('saudacao-usuario');
 
-        // **Atenção:** Se esta página for para ser protegida, adicione:
-        // window.location.replace("login.html");
+  if(raw){
+    if(linkLogin) hide(linkLogin);
+    show(userBox, 'flex');
+    show(linkLogout);
+    if(userLink){ userLink.href='minha-conta.html'; userLink.title='Minha conta'; }
+
+    const nome = raw; 
+    if(saudacao){ saudacao.textContent = `Olá, ${nome}!`; show(saudacao, 'inline'); }
+    if(avatar){ avatar.textContent = initialsFrom(nome); }
+
+    if(userIcon){
+      userIcon.onload  = () => { show(userIcon, 'inline-block'); hide(avatar); };
+      userIcon.onerror = () => { hide(userIcon); show(avatar, 'grid'); };
+      userIcon.src = './img/login-avatar.png';
     }
+  }else{
+    if(linkLogin) show(linkLogin);
+    hide(userBox); hide(linkLogout);
+  }
 }
-
+document.addEventListener('DOMContentLoaded', verificarStatusLogin);
 // =================================================================
 // FUNÇÃO LOGOUT (Para o link 'Sair')
 // =================================================================

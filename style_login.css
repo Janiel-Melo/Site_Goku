@@ -40,24 +40,31 @@ header{
 
 .login-box {
     background: rgba(255, 255, 255, 0.85);
-    padding: 30px;
+    padding-left: 24px;
+    padding-right: 16px;
     border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
     width: 300px;
     text-align: center;
-    margin-left: 50px;
+    margin-left: 0px;
+    left: 50px;
+    top:120px;
+    position: absolute;
 }
-
+.login-box *, .login-box *:before, .login-box *:after {
+    box-sizing: border-box;
+}
 .login-box h2 {
     margin-bottom: 20px;
 }
 
 .login-box input {
     width: 100%;
-    padding: 10px;
+    padding: 8px 10px;
     margin: 10px 0;
     border: 1px solid #ccc;
     border-radius: 5px;
+    
 }
 
 .login-box button {
@@ -69,6 +76,12 @@ header{
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
+    margin-bottom: 16px;
+}
+.login-box form {
+   display:flex;
+   flex-direction: column;
+   gap: 12px;
 }
 
 .login-box button:hover {
@@ -77,12 +90,16 @@ header{
 
 .cadastro-box {
     background: rgba(255, 255, 255, 0.85);
-    padding: 30px;
+    padding-left: 24px;
+    padding-right: 16px;
     border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
     width: 300px;
     text-align: center;
-    margin-left: 50px;
+    margin-left: 0px;
+    left: 50px;
+    top:120px;
+    position: absolute;
 }
 
 .cadastro-box h2{
@@ -110,4 +127,12 @@ header{
 
 .cadastro-box  button:hover {
     background: #45a049;
+}
+
+.link-login {
+    display: block;
+    margin-top: 15px;
+    color: #333;
+    text-decoration: none;
+    font-size: 14px;
 }

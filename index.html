@@ -25,20 +25,18 @@
         <a class="nav-link" href="public/sobre.html">Sobre</a>
         <a class="nav-link" href="#">Produtos</a>
         <a class="nav-link" href="#">Ofertas</a>
-        <a class="nav-link" href="login.html">Entre ou Cadastre-se</a>
+        <a class="nav-link" id="link-login"  href="Cadastro.html">Entre ou Cadastre-se</a>
+        
       </div>
+      <div class="ms-auto d-flex alingn-items-center gap-2" id="user-box">
+        <img src="./img/user-interface.png" id="user-icon" alt="usuario"class="user-icon" >
+        <div id="avatar-usuario" class="user-avatar" aria-hidden="true"style="display:none"></div>
+        <span class="nav-link mb-0 p-0" id="saudacao-usuario" style="display:none"></span>
+        <a class="nav-link" href="#" id="link-logout" onclick="logout()"style="display:none">Sair</a>
     </div>
   </div>
 </nav>
 
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid">
-        <div class="navbar-nav">
-        <a class="nav-link" href="login.html" id="link-login">Entre ou Cadastre-se</a>
-        <a class="nav-link" href="#" onclick="logout()" id="link-logout" style="display: none;">Sair (Logout)</a> 
-        <span class="nav-link" id="saudacao-usuario" style="display: none;"></span> 
-        </div>
-    </div>
 </nav>
 
     <div class="container">
