@@ -22,8 +22,10 @@
       <div class="navbar-nav">
         <a class="nav-link active" aria-current="page" href="#">Home</a>
         <a class="nav-link" href="public/sobre.html">Sobre</a>
-        <a class="nav-link" href="carrinho.html">Carrinho</a>
-        <a class="nav-link" href="#">Ofertas</a>
+        <a class="nav-link" href="carrinho.html" aria-label="Carrinho">
+        <img src="./img/shopping-cart.png" alt=""width="24" height="24">
+        </a>
+        <a class="nav-link" href="#">Ofertas</a> 
         <a class="nav-link" id="link-login" href="Cadastro.html">Entre ou Cadastre-se</a>
       </div>
     </div>
@@ -80,7 +82,7 @@
     </div>
 
 
-    <div class="container">
+   <div class="container">
         <h2>Produtos em Destaque</h2>
         <div class="product">
             <div class="product-item" data-nome="Figura Goku Super Saiyajin" data-preco="199.99">
@@ -97,7 +99,7 @@
                 <p class="price">R$ 179,99</p>
                 <button class="btn-dbz add-to-cart">Adicionar ao Carrinho</button>
             </div>
-            <div class="product-item">
+            <div class="product-item" data-nome="Figura Bills" data-preco="179.99">
                 <img src="img/Bills.png" alt="Bills">
                 <h3>Figura Bills</h3>
                 <p>Figura colecionável de Bills, o Deus da Destruição.</p>
@@ -160,6 +162,7 @@
 
     </div>
 
+
     <footer>
         <p>&copy; Loja Do dragon Ball(2025).Todos os direitos reservados.</p>
 
@@ -175,5 +178,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 
     <script src="code.js"></script>
+    <script src="carrinho.js"></script>
 </body>
 </html>
