@@ -1,5 +1,4 @@
-# Projeto de Site de vendas com tema: Dragon Ball
-## Autores
+**Projeto - Site Do Goku - This is part of tasks from DW-I - FATEC Diadema - São Paulo|Desenvolvido por Eduardo Souza,Gabriel Sheldes,Janiel Melo,Marcos Martins e Thiago Monteiro**
 
 <b style="color:#00BFFF">Eduardo Barbosa|</b>
 <b style="color:#00BFFF"> Marcos Martins|</b>
@@ -8,6 +7,9 @@
 <b style="color:#00BFFF">Janiel Melo|</b>
 
 
+<img src="/img/Print-Tela home.png" width="120">
+<img src="./img/Print-Tela home2.png" width="120">
+<img src="./img/Print-Tela home3.png" width="120">
 
 
 
@@ -26,7 +28,13 @@ produtos).
 - Css3
 - JavaScript
 - Bootstrap
-
+<div display="inline">
+<img width="54px" height="54px"  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" />   
+<img width="54px" height="54px"  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" />
+<img width="54px" height="54px"  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg" />     
+<img width="54px" height="54px"  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/json/json-original.svg" />       
+<img width="54px" height="54px"  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />    
+<div> 
 
 
 <p align='justify'>
