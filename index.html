@@ -7,8 +7,8 @@
     <title>Loja Dragon Ball</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
+    <script src="code.js"></script> 
 </head>
 <body>
     <header>
@@ -33,13 +33,21 @@
         <a class="nav-link active" aria-current="page" href="#">Home</a>
         <a class="nav-link" href="public/sobre.html">Sobre</a>
         <a class="nav-link" href="#">Produtos</a>
-        <a class="nav-link" href="#">Ofertas</a>
         <a class="nav-link" href="login.html">Entre ou Cadastre-se</a>
       </div>
     </div>
   </div>
 </nav>
 
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+        <div class="navbar-nav">
+        <a class="nav-link" href="login.html" id="link-login">Entre ou Cadastre-se</a>
+        <a class="nav-link" href="#" onclick="logout()" id="link-logout" style="display: none;">Sair (Logout)</a> 
+        <span class="nav-link" id="saudacao-usuario" style="display: none;"></span> 
+        </div>
+    </div>
+</nav>
 
     <div class="container">
         <h2>Produtos em Destaque</h2>
@@ -56,7 +64,7 @@
                 <p>Figura colecionável de Veggeto Super Saiyajin.</p>
                 <p class="price">R$ 179,99</p>
             </div>
-                            <div class="product-item">
+                 <div class="product-item">
                 <img src="img/Bills.png" alt="Bills">
                 <h3>Figura Bills</h3>
                 <p>Figura colecionável de Bills, o Deus da Destruição.</p>
@@ -110,7 +118,9 @@
     </div>
 
     <footer>
-        <p>&copy; 2025 Loja Dragon Ball. Todos os direitos reservados.</p>
+        <p>&copy; Loja Do dragon Ball(2025).Todos os direitos reservados.</p>
+        
     </footer>
+    <script src="code.js"></script> 
 </body>
 </html>
