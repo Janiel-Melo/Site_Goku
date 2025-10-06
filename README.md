@@ -7,9 +7,9 @@
 <b style="color:#00BFFF">Janiel Melo|</b>
 
 
-<img src="/img/Print-Tela home.png" width="120">
-<img src="./img/Print-Tela home2.png" width="120">
-<img src="./img/Print-Tela home3.png" width="120">
+<img src="/img/Print-Tela home.png" width="320">
+<img src="./img/Print-Tela home2.png" width="320">
+<img src="./img/Print-Tela home3.png" width="320">
 
 
 
