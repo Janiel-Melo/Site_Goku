@@ -107,8 +107,8 @@ header{
 }
 
 .cadastro-box input {
-    width: 100%;
-    padding: 10px;
+   width: 100%;
+    padding: 8px 10px;
     margin: 10px 0;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -123,12 +123,20 @@ header{
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
+    margin-bottom: 16px;
+}
+.cadastro-box form {
+   display:flex;
+   flex-direction: column;
+   gap: 12px;
 }
 
 .cadastro-box  button:hover {
     background: #45a049;
 }
-
+.cadastro-box *, .cadastro-box *:before, .cadastro-box *:after {
+    box-sizing: border-box;
+}
 .link-login {
     display: block;
     margin-top: 15px;
