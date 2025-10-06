@@ -25,12 +25,8 @@ function cadastrar() {
     }, 1000);
 }
 
-
-// ===============================================
-// FUNÇÃO DE LOGIN
-// ===============================================
 function logar() {
-    // 1. Pega os valores dos campos de login
+    
     const user = document.getElementById('login-user').value;
     const pass = document.getElementById('login-pass').value;
     const mensagem = document.getElementById('mensagem');
@@ -40,23 +36,19 @@ function logar() {
         return;
     }
 
-    // 2. Tenta buscar a senha salva no LocalStorage, usando o nome de usuário como chave
     const senhaSalva = localStorage.getItem(user);
 
-    // 3. Verifica se o usuário existe (se a chave foi encontrada)
     if (senhaSalva === null) {
         mensagem.textContent = 'Erro no Login: Usuário não encontrado.';
         return;
     }
 
-    // 4. Compara a senha digitada com a senha salva
     if (pass === senhaSalva) {
         mensagem.textContent = `Login realizado com sucesso! Bem-vindo(a), ${user}!`;
 
-        // **AÇÃO PÓS-LOGIN**
-        // Aqui, você pode redirecionar o usuário para a página principal.
+     
         localStorage.setItem('usuarioLogado', user);
-        localStorage.setItem('justLoggedIn', 'true'); // Flag para mostrar popup de boas-vindas
+        localStorage.setItem('justLoggedIn', 'true'); 
 
         window.location.href = "index.html";
     } else {
@@ -105,9 +97,6 @@ function verificarStatusLogin(){
 }
 document.addEventListener('DOMContentLoaded', verificarStatusLogin);
 
-// =================================================================
-// FUNÇÃO LOGOUT (Para o link 'Sair')
-// =================================================================
 function logout() {
     localStorage.removeItem('usuarioLogado');
     window.location.replace("login.html");
