@@ -1,5 +1,7 @@
 **Projeto - Site Do Goku - This is part of tasks from DW-I - FATEC Diadema - São Paulo|Desenvolvido por Eduardo Souza,Gabriel Sheldes,Janiel Melo,Marcos Martins e Thiago Monteiro**
 
+**Orientado Pelo Phd.Professor Bruno Zolatareff
+
 <b style="color:#00BFFF">Eduardo Barbosa|</b>
 <b style="color:#00BFFF"> Marcos Martins|</b>
 <b style="color:#00BFFF">Gabriel Sheldes|</b>
