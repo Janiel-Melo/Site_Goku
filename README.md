@@ -25,6 +25,8 @@ usado obrigatoriamente Bootstrap, Carrossel, E o ecossistema padrão de uma loja
 produtos).
 </p>
 
+#Site do projeto:https://janiel-melo.github.io/Site_Goku/
+
 # Tecnologias 
 - Html 5
 - Css3
